@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+:root{
+    --amarillo: #FFD500; 
+    --azul: #006CB6; 
+    --rojo: #D11013; 
+    --verde: #008130; 
+}
 body{
     height: 100vh;
     margin: 0;
@@ -7,10 +14,19 @@ body{
 .page{
     position: relative;
     height: 100vh;
+    width: 100%;
 }
 .container{
     position: absolute;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav    aside"
+                        "section aside"
+                        "footer  aside";
+    height: 100%;
+    width: 100%;
 }
 .loader{
     background: white;
