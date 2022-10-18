@@ -269,5 +269,14 @@ body{
     background: rgba(210, 145, 145, 0.5);
     position: absolute;
     z-index: 4;
-
+    /*centra los elementos*/
+    place-items: center;
+    
 }
+.modal__content{
+    background: white;
+    border-radius: 3%;
+    width: 50%;
+    height: 50%;
+}
+
